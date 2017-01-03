@@ -74,6 +74,7 @@ type CreateOpts struct {
 	Description  string `json:"description,omitempty"`
 	AdminStateUp *bool  `json:"admin_state_up,omitempty"`
 	Shared       *bool  `json:"shared,omitempty"`
+        Router_ids   []string `json:"router_ids,omitempty"`
 }
 
 // ToFirewallCreateMap casts a CreateOpts struct to a map.
